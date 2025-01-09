@@ -292,6 +292,12 @@
     margin-top: 10rem;
     height: 70vh;
   }
+  .cont-text{
+    gap: 0;
+  }
+  .cont-text img{
+  scale: 0.7;
+  }
   .about {
     padding-bottom: 5rem;
     border-radius: 2rem 2rem 0 0;
