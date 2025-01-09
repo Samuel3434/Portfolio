@@ -2,17 +2,13 @@
   width: 100%;
   height: 100vh;
   background-color: black;
-background: linear-gradient(to bottom, 
-  #000000, /* very dark green, close to black */
-  var(--deep-dark-green));
-
+  background: linear-gradient(to bottom, #000000, var(--deep-dark-green));
 
   border: none;
   color: white;
-  /* gap: 10rem; */
   padding-bottom: 10rem;
   position: relative;
-  border-radius: 4rem 4rem 0 0 ;
+  border-radius: 4rem 4rem 0 0;
 }
 .card-container {
   width: 100vw;
@@ -30,17 +26,10 @@ background: linear-gradient(to bottom,
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   scale: 0;
-  box-shadow: 
-  0 0 5px #57be85, 
-  0 0 15px rgba(87, 190, 133, 0.8), 
-  0 0 30px rgba(87, 190, 133, 0.6), 
-  0 0 60px rgba(39, 115, 106, 0.4), 
-  0 0 90px rgba(39, 115, 106, 0.3), 
-  0 0 150px rgba(39, 115, 106, 0.2), 
-  0 0 200px rgba(39, 115, 106, 0.1), 
-  0 0 300px rgba(3, 89, 54, 0.05);
-
-  /* z-index: 3; */
+  box-shadow: 0 0 5px #57be85, 0 0 15px rgba(87, 190, 133, 0.8),
+    0 0 30px rgba(87, 190, 133, 0.6), 0 0 60px rgba(39, 115, 106, 0.4),
+    0 0 90px rgba(39, 115, 106, 0.3), 0 0 150px rgba(39, 115, 106, 0.2),
+    0 0 200px rgba(39, 115, 106, 0.1), 0 0 300px rgba(3, 89, 54, 0.05);
 }
 
 .circle {
@@ -51,18 +40,16 @@ background: linear-gradient(to bottom,
   inset: calc(10px * var(--i));
 }
 .c1 {
-  animation: eny 3s forwards;
+  animation: eny 2s forwards;
   animation-fill-mode: forwards;
-  /* z-index: 2; */
 }
 .c2 {
-  animation: yne 3s forwards;
+  animation: yne 2s forwards;
   animation-fill-mode: forwards;
 }
 .c3 {
   animation: ade 2s forwards;
   transition: all 1s ease-in-out;
-  /* animation-delay: 1s; */
   animation-delay: calc(1s + 0.1s * var(--i));
 }
 .c4 {
@@ -119,7 +106,6 @@ background: linear-gradient(to bottom,
   100% {
     scale: 1;
     transform: translate(320%, -130%) rotateY(-80deg);
-    /* translate3d(0, 1, 0, -80deg); */
   }
 }
 
@@ -133,7 +119,6 @@ background: linear-gradient(to bottom,
 }
 @keyframes lsd {
   from {
-    /* transform: translate(-320%, -130%) ; */
     transform: translate(-320%, -130%) rotate3d(0, 1, 0, 80deg);
   }
   to {
@@ -162,8 +147,8 @@ background: linear-gradient(to bottom,
   }
 }
 .grow-in {
-  animation: grow-height 1s forwards;
-  animation-delay: 5s;
+  animation: grow-height 0.5s forwards;
+  animation-delay: 4s;
 }
 .about-content {
   width: 100%;
@@ -183,15 +168,10 @@ background: linear-gradient(to bottom,
   height: 5rem;
   /* align-self: top; */
   background-color: var(--medium-green);
-  box-shadow: 
-  0 0 5px #57be85, 
-  0 0 15px rgba(87, 190, 133, 0.8), 
-  0 0 30px rgba(87, 190, 133, 0.6), 
-  0 0 60px rgba(39, 115, 106, 0.4), 
-  0 0 90px rgba(39, 115, 106, 0.3), 
-  0 0 150px rgba(39, 115, 106, 0.2), 
-  0 0 200px rgba(39, 115, 106, 0.1), 
-  0 0 300px rgba(3, 89, 54, 0.05);
+  box-shadow: 0 0 5px #57be85, 0 0 15px rgba(87, 190, 133, 0.8),
+    0 0 30px rgba(87, 190, 133, 0.6), 0 0 60px rgba(39, 115, 106, 0.4),
+    0 0 90px rgba(39, 115, 106, 0.3), 0 0 150px rgba(39, 115, 106, 0.2),
+    0 0 200px rgba(39, 115, 106, 0.1), 0 0 300px rgba(3, 89, 54, 0.05);
 
   /* background: linear-gradient(#44444427, #6e6e6e28); */
 }
@@ -208,15 +188,10 @@ background: linear-gradient(to bottom,
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0;
-  box-shadow: 
-  0 0 5px #57be85, 
-  0 0 15px rgba(87, 190, 133, 0.8), 
-  0 0 30px rgba(87, 190, 133, 0.6), 
-  0 0 60px rgba(39, 115, 106, 0.4), 
-  0 0 90px rgba(39, 115, 106, 0.3), 
-  0 0 150px rgba(39, 115, 106, 0.2), 
-  0 0 200px rgba(39, 115, 106, 0.1), 
-  0 0 300px rgba(3, 89, 54, 0.05);
+  box-shadow: 0 0 5px #57be85, 0 0 15px rgba(87, 190, 133, 0.8),
+    0 0 30px rgba(87, 190, 133, 0.6), 0 0 60px rgba(39, 115, 106, 0.4),
+    0 0 90px rgba(39, 115, 106, 0.3), 0 0 150px rgba(39, 115, 106, 0.2),
+    0 0 200px rgba(39, 115, 106, 0.1), 0 0 300px rgba(3, 89, 54, 0.05);
 }
 .cont-text {
   background-color: transparent;
@@ -233,7 +208,6 @@ background: linear-gradient(to bottom,
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  
 }
 .cont::before {
   content: "";
@@ -255,43 +229,87 @@ background: linear-gradient(to bottom,
 @media screen and (max-width: 768px) {
   .card {
     display: none;
-    height: 120px;
-  width: 120px;
   }
-.cont::before {
-  content: "";
-  position: absolute;
-  background-color: gray;
-  opacity: 0.4;
-  width: 90%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-bottom-right-radius: 100%;
-  /* z-index: 4; */
-}
+  .cont::before {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    opacity: 0.4;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 100%;
+    /* z-index: 4; */
+  }
+  .card-container{
+    height: 80vh;
+  }
   .about {
     padding-bottom: 5rem;
     border-radius: 2rem 2rem 0 0;
   }
 
   .br {
-    width: 650;
+    width: 650px;
     height: 3rem;
     margin-top: 3rem;
   }
-  .b1{
-
-  animation: inc 2s forwards;
-  animation-delay: 0s;
+  .b1 {
+    animation: inc 2s forwards;
+    animation-delay: 0s;
   }
 
   .cont {
     width: 70%;
     border-radius: 0.5rem;
-    box-shadow: 
-      0 0 5px #57be85, 
-      0 0 10px rgba(87, 190, 133, 0.8);
+    box-shadow: 0 0 5px #57be85, 0 0 10px rgba(87, 190, 133, 0.8);
+  }
+
+  .cont-text {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width:531px){
+  .card {
+    display: none;
+  }
+  .cont::before {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    opacity: 0.4;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 100%;
+    /* z-index: 4; */
+  }
+  .card-container{
+    margin-top: 10rem;
+    height: 70vh;
+  }
+  .about {
+    padding-bottom: 5rem;
+    border-radius: 2rem 2rem 0 0;
+  }
+
+  .br {
+    height: 3rem;
+    margin-top: 3rem;
+  }
+  .b1 {
+    animation: inc 2s forwards;
+    animation-delay: 0s;
+  }
+
+  .cont {
+    width: 70%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px #57be85, 0 0 10px rgba(87, 190, 133, 0.8);
   }
 
   .cont-text {

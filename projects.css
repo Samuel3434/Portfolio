@@ -189,12 +189,26 @@ footer {
   font-size: 1.2rem;
   color: var(--medium-green);
   transition: color 0.3s ease;
+  position: relative;
+}
+.social-links li a::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 5px;
+  border-radius: 15px;
+  bottom: -0.25rem;
+  transition: all 0.4s ease-in-out;
 }
 
 .social-links li a:hover {
   color: var(--light-green);
 }
 
+.social-links li a:hover::before {
+  width: 100%;
+}
 .footer-bottom {
   font-size: 0.9rem;
   color: var(--dark-green);
@@ -214,13 +228,50 @@ footer {
   .projects .prev-btn img {
     width: 4rem;
   }
-  .projects .next-btn img{
-  left: 60%;
-  top: 90%;
+  .projects .next-btn img {
+    left: 60%;
+    top: 90%;
   }
-  .projects .prev-btn img{
-  left: 40%;
-  top: 90%;
+  .projects .prev-btn img {
+    left: 40%;
+    top: 90%;
+  }
+
+  .footer-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer-content p {
+    font-size: 1rem;
+  }
+
+  .social-links li a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 531px) {
+  .slider {
+    height: 60%;
+    margin-top: -10rem;
+  }
+
+  .item {
+    width: 300px;
+    height: 400px;
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+  }
+
+  .projects .next-btn img,
+  .projects .prev-btn img {
+    width: 4rem;
+  }
+  .projects .next-btn img {
+    left: 55%;
+    top: 80%;
+  }
+  .projects .prev-btn img {
+    left: 35%;
+    top: 80%;
   }
 
   .footer-content h2 {
