@@ -5,9 +5,13 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import About from "./section/About";
 import Hero from "./section/Hero";
+import MobileAbout from "./section/MobileAbout";
+import MobileHero from "./section/MobileHero";
+import { useIsMobile } from "./hooks/useIsMobile";
 
 function App() {
   const hashUpdateTimeout = useRef<number | null>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -32,8 +36,10 @@ function App() {
 
     const heroEl = document.getElementById("hero");
     const aboutEl = document.getElementById("about");
+    const experiencesEl = document.getElementById("experiences");
     if (heroEl) snap.addElement(heroEl);
     if (aboutEl) snap.addElement(aboutEl);
+    if (experiencesEl) snap.addElement(experiencesEl);
 
     const scrollToHash = (immediate = false) => {
       const hash = window.location.hash;
@@ -41,7 +47,10 @@ function App() {
         const id = hash.slice(1);
         const el = document.getElementById(id);
         if (el) {
-          lenis.scrollTo(el, immediate ? { immediate: true } : { duration: 1.2 });
+          lenis.scrollTo(
+            el,
+            immediate ? { immediate: true } : { duration: 1.2 },
+          );
         }
       }
     };
@@ -73,6 +82,7 @@ function App() {
 
     if (heroEl) observer.observe(heroEl);
     if (aboutEl) observer.observe(aboutEl);
+    if (experiencesEl) observer.observe(experiencesEl);
 
     return () => {
       if (hashUpdateTimeout.current) {
@@ -88,8 +98,8 @@ function App() {
 
   return (
     <>
-      <Hero />
-      <About />
+      {isMobile ? <MobileHero /> : <Hero />}
+      {isMobile ? <MobileAbout /> : <About />}
     </>
   );
 }
